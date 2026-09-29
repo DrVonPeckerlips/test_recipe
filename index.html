@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Recipe Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 Quick Recipe Generator</h1>
+            <p>Find meals using ingredients you already have!</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="form-group">
+                    <label for="ingredients-input">Enter Ingredients (separated by commas):</label>
+                    <input type="text" id="ingredients-input" placeholder="e.g., chicken, rice, broccoli, garlic">
+                </div>
+                <button id="generate-btn">Generate Recipes</button>
+            </section>
+
+            <section class="results-section">
+                <h2>Suggested Recipes</h2>
+                <div id="recipes-container" class="recipes-grid">
+                    <!-- Recipes will be injected here by app.js -->
+                    <p class="placeholder-text">Enter ingredients above to see suggestions.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
