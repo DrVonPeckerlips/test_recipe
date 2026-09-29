@@ -1,4 +1,4 @@
-// Local recipe database list
+// Expanded local recipe database list
 const recipeDatabase = [
     {
         title: "Simple Chicken & Rice",
@@ -14,6 +14,36 @@ const recipeDatabase = [
         title: "Chicken & Broccoli Bowl",
         ingredients: ["chicken", "broccoli", "rice", "garlic"],
         instructions: "Cook chicken and garlic. Steam broccoli. Serve over a warm bed of cooked rice."
+    },
+    {
+        title: "Classic Tomato Pasta",
+        ingredients: ["pasta", "tomato", "garlic"],
+        instructions: "Boil pasta. In a pan, simmer crushed tomatoes and minced garlic with olive oil. Toss pasta in the sauce."
+    },
+    {
+        title: "Easy Beef Tacos",
+        ingredients: ["beef", "tortilla", "cheese"],
+        instructions: "Brown the ground beef in a skillet. Warm your tortillas, then assemble with beef and shredded cheese."
+    },
+    {
+        title: "Scrambled Eggs & Toast",
+        ingredients: ["egg", "bread", "butter"],
+        instructions: "Toast your bread and spread butter. Whisk eggs and scramble them in a warm pan until fluffy. Serve together."
+    },
+    {
+        title: "Quick Caprese Salad",
+        ingredients: ["tomato", "cheese"],
+        instructions: "Slice tomatoes and fresh cheese (like mozzarella). Layer them on a plate and drizzle with olive oil and salt."
+    },
+    {
+        title: "French Toast",
+        ingredients: ["egg", "bread", "milk"],
+        instructions: "Whisk egg and a splash of milk together. Dip bread slices into the mixture and fry in a pan until golden brown on both sides."
+    },
+    {
+        title: "Banana Peanut Butter Snack",
+        ingredients: ["banana", "peanut butter"],
+        instructions: "Slice the banana in half lengthwise or into coins, then spread peanut butter over the top."
     }
 ];
 
@@ -38,7 +68,7 @@ document.getElementById('generate-btn').addEventListener('click', () => {
     });
 
     if (matchedRecipes.length === 0) {
-        container.innerHTML = '<p class="placeholder-text">No recipes found matching those ingredients. Try adding chicken, rice, garlic, or broccoli!</p>';
+        container.innerHTML = '<p class="placeholder-text">No recipes found matching those ingredients. Try entering chicken, rice, pasta, egg, beef, or tomato!</p>';
         return;
     }
 
